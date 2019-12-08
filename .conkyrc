@@ -1,0 +1,93 @@
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont DejaVu Sans Mono:size=20
+gap_x 25
+gap_y 25
+minimum_size 5 5
+net_avg_samples 2
+double_buffer yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_class Conky
+own_window_type override
+own_window_transparent yes
+own_window_argb_visual yes
+
+
+
+own_window_argb_value 0
+stippled_borders 0
+update_interval 3.0
+uppercase no
+use_spacer none
+
+# Defining colors
+default_color FFFFFF
+# Shades of Gray
+color1 DDDDDD
+color2 AAAAAA
+color3 888888
+# Blue
+color4 blue
+# Green
+color5 77B753
+
+# Loading lua script for drawning rings
+lua_load /home/ss/CST/seamod_rings.lua
+lua_draw_hook_post main
+
+## System information using conky capabilities
+
+# Header with base system info
+own_window_argb_value 0
+own_window_colour 000000
+TEXT
+${font Hack:size=10,weight:bold}${color4}SYSTEM ${hr 1}
+${offset 15}${font Hack:size=10,weight:normal}${color1}$sysname $kernel
+${offset 15}${font Hack:size=10,weight:normal}${color1}${time %c}
+${offset 15}${font Hack:size=10,weight:normal}${color1}Uptime: $uptime
+${offset 120}${font Hack:size=10}${color blue}${exec ./speed.sh}
+
+# Showing CPU Graph
+${voffset -10}
+${offset 140}${color5}${cpugraph 40,183 666666 666666}${voffset -25}
+${offset 90}${font Hack:size=10,weight:bold}${color5}CPU
+# Showing TOP 5 CPU-consumers
+${offset 105}${font Hack:size=10,weight:normal}${color4}${top name 1}${alignr}${top cpu 1}%
+${offset 105}${font Hack:size=10,weight:normal}${color1}${top name 2}${alignr}${top cpu 2}%
+${offset 105}${font Hack:size=10,weight:normal}${color2}${top name 3}${alignr}${top cpu 3}%
+${offset 105}${font Hack:size=10,weight:normal}${color3}${top name 4}${alignr}${top cpu 4}%
+${offset 105}${font Hack:size=10,weight:normal}${color3}${top name 5}${alignr}${top cpu 5}%
+
+#Showing memory part with TOP 5
+${voffset 0}
+${offset 140}
+${offset 90}${font Hack:size=10,weight:bold}${color5}RAM
+${offset 105}${font Hack:size=10,weight:normal}${color4}${top_mem name 1}${alignr}${top_mem mem 1}%
+${offset 105}${font Hack:size=10,weight:normal}${color1}${top_mem name 2}${alignr}${top_mem mem 2}%
+${offset 105}${font Hack:size=10,weight:normal}${color2}${top_mem name 3}${alignr}${top_mem mem 3}%
+${offset 105}${font Hack:size=10,weight:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 4}%
+${offset 105}${font Hack:size=10,weight:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 5}%
+
+# Showing disk partitions: root, home and Data
+${voffset 28}
+${offset 90}${font Hack:size=10,weight:bold}${color5}  DISCOS
+${offset 140}${diskiograph 33,183 666666 666666}${voffset -35}
+${voffset 20}
+${offset 15}${font Hack:size=9,weight:bold}${color1}Free: ${font Hack:size=9,weight:normal}${fs_free /}${alignr}${font Hack:size=9,weight:bold}Used: ${font Hack:size=9,weight:normal}${fs_used /}
+${offset 15}${font Hack:size=9,weight:bold}${color1}Free: ${font Hack:size=9,weight:normal}${fs_free /home}${alignr}${font Hack:size=9,weight:bold}Used: ${font Hack:size=9,weight:normal}${fs_used /home}
+
+
+
+
+
