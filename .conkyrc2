@@ -41,7 +41,6 @@ color3 gray
 
 TEXT
 ${font Hack:size=10}${color3}
-${texeci 1800 curl -s wttr.in?lang=es  | sed -n '3,7{s/\d27\[[0-9;]*m//g;s/^..//;s/ *$//;p}'}
+${execi 10 curl -s wttr.in?lang=es  | sed -n '3,7{s/\d27\[[0-9;]*m//g;s/^..//;s/ *$//;p}'}
 ${color2}$hr
 ${font Hack:size=10}${color3} ${exec cal}
-
