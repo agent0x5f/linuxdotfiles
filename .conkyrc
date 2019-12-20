@@ -36,7 +36,7 @@ conky.config = {
 	color3 = '888888',
 	color4 = 'blue',
 
---# Loading lua script for drawning rings
+
 lua_load = '/home/ss/.config/anillo.lua',
 lua_draw_hook_post = 'main',
 
@@ -51,20 +51,20 @@ ${offset 15}${font Hack:size=10}${color1}${time %c}
 ${offset 15}${font Hack:size=10}${color1}Uptime: $uptime
 ${offset 120}${font Hack:size=10}${color blue}${exec /home/ss/.speed.sh}
 
---# Showing CPU Graph
+
 ${voffset -10}
 ${offset 140}${color5}${cpugraph 40,183 666666 666666}${voffset -25}
 ${offset 90}${font Hack:bold:size=10}${color4}CPU
---# Showing TOP 5 CPU-consumers
+
 ${offset 105}${font Hack:size=10}${color4}${top name 1}${alignr}${top cpu 1}%
 ${offset 105}${font Hack:size=10}${color1}${top name 2}${alignr}${top cpu 2}%
 ${offset 105}${font Hack:size=10}${color2}${top name 3}${alignr}${top cpu 3}%
 ${offset 105}${font Hack:size=10}${color3}${top name 4}${alignr}${top cpu 4}%
 ${offset 105}${font Hack:size=10}${color3}${top name 5}${alignr}${top cpu 5}%
 
---#Showing memory part with TOP 5
-${voffset 0}
-${offset 140}
+
+${voffset -40}
+${offset 0}
 ${offset 90}${font Hack:bold:size=10}${color4}RAM
 ${offset 105}${font Hack:size=10}${color4}${top_mem name 1}${alignr}${top_mem mem 1}%
 ${offset 105}${font Hack:size=10}${color1}${top_mem name 2}${alignr}${top_mem mem 2}%
@@ -72,7 +72,6 @@ ${offset 105}${font Hack:size=10}${color2}${top_mem name 3}${alignr}${top_mem me
 ${offset 105}${font Hack:size=10}${color3}${top_mem name 4}${alignr}${top_mem mem 4}%
 ${offset 105}${font Hack:size=10}${color3}${top_mem name 4}${alignr}${top_mem mem 5}%
 
---# Showing disk partitions: root, home and Data
 ${voffset 28}
 ${offset 90}${font Hack:bold:size=10}${color4}  DISCOS
 ${offset 140}${diskiograph 33,183 666666 666666}${voffset -35}
