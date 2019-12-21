@@ -53,7 +53,7 @@ ${offset 120}${font Hack:size=10}${color blue}${exec /home/ss/.speed.sh}
 
 
 ${voffset -10}
-${offset 140}${color5}${cpugraph 40,183 666666 666666}${voffset -25}
+${offset 140}${color4}${cpugraph 40,183 666666 666666}${voffset -25}
 ${offset 90}${font Hack:bold:size=10}${color4}CPU
 
 ${offset 105}${font Hack:size=10}${color4}${top name 1}${alignr}${top cpu 1}%
