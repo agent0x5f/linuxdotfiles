@@ -74,7 +74,7 @@ ${offset 105}${font Hack:size=10}${color3}${top_mem name 4}${alignr}${top_mem me
 
 ${voffset 28}
 ${offset 90}${font Hack:bold:size=10}${color4}  DISCOS
-${offset 140}${diskiograph 33,183 666666 666666}${voffset -35}
+${offset 140}${diskiograph 33,183 ffffff 0055ff}${voffset -35}
 ${voffset 20}
 
 ${offset 15}${font Hack:bold:size=10}${color1}Read: ${font Hack:bold:size=10}${color1}${diskio_read /dev/sda}${alignr}Write: ${diskio_write /dev/sda}
