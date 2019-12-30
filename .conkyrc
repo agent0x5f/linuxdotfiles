@@ -50,6 +50,8 @@ ${offset 15}${font Hack:size=10}${color1}$sysname $kernel
 ${offset 15}${font Hack:size=10}${color1}${time %c}
 ${offset 15}${font Hack:size=10}${color1}Uptime: $uptime
 ${offset 120}${font Hack:size=10}${color blue}${exec /home/ss/.speed.sh}
+${offset 120}${exec sensors | grep CPU}
+${offset 120}${exec sensors | grep Fan}
 
 
 ${voffset -10}
