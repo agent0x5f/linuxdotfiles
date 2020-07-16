@@ -1,6 +1,6 @@
 conky.config = {
 
-	alignment = top_right,
+	alignment = bottom_right,
 	use_xft = true,
 	border_width = 1.0,
 	cpu_avg_samples = 2,
@@ -11,20 +11,19 @@ conky.config = {
 	draw_graph_borders = true,
 	draw_outline = false,
 	draw_shades = false,
-	gap_x = 25,
-	gap_y = 25,
+	gap_x = 965,
+	gap_y = 140,
 	net_avg_samples = 2,
 	double_buffer = true,
 	out_to_console = false,
 	out_to_stderr = false,
 	extra_newline = false,
 
+	background = true,
 	own_window = true,
-	own_window_class = Conky,
-	own_window_type = 'override',
-	own_window_transparent = true,
 	own_window_argb_visual = true,
-	own_window_argb_value = 0,
+	own_window_type = 'normal',
+    own_window_transparent = true,
 
 	stippled_borders = 0,
 	update_interval = 3.0,
@@ -58,21 +57,21 @@ ${voffset -10}
 ${offset 140}${color4}${cpugraph 40,183 666666 666666}${voffset -25}
 ${offset 90}${font Hack:bold:size=10}${color4}CPU
 
-${offset 105}${font Hack:size=10}${color4}${top name 1}${alignr}${top cpu 1}%
-${offset 105}${font Hack:size=10}${color1}${top name 2}${alignr}${top cpu 2}%
-${offset 105}${font Hack:size=10}${color2}${top name 3}${alignr}${top cpu 3}%
-${offset 105}${font Hack:size=10}${color3}${top name 4}${alignr}${top cpu 4}%
-${offset 105}${font Hack:size=10}${color3}${top name 5}${alignr}${top cpu 5}%
+${offset 125}${font Hack:size=10}${color4}${top name 1}${alignr}${top cpu 1}%
+${offset 125}${font Hack:size=10}${color1}${top name 2}${alignr}${top cpu 2}%
+${offset 125}${font Hack:size=10}${color2}${top name 3}${alignr}${top cpu 3}%
+${offset 125}${font Hack:size=10}${color3}${top name 4}${alignr}${top cpu 4}%
+${offset 125}${font Hack:size=10}${color3}${top name 5}${alignr}${top cpu 5}%
 
 
 ${voffset -40}
 ${offset 0}
 ${offset 90}${font Hack:bold:size=10}${color4}RAM
-${offset 105}${font Hack:size=10}${color4}${top_mem name 1}${alignr}${top_mem mem 1}%
-${offset 105}${font Hack:size=10}${color1}${top_mem name 2}${alignr}${top_mem mem 2}%
-${offset 105}${font Hack:size=10}${color2}${top_mem name 3}${alignr}${top_mem mem 3}%
-${offset 105}${font Hack:size=10}${color3}${top_mem name 4}${alignr}${top_mem mem 4}%
-${offset 105}${font Hack:size=10}${color3}${top_mem name 4}${alignr}${top_mem mem 5}%
+${offset 125}${font Hack:size=10}${color4}${top_mem name 1}${alignr}${top_mem mem 1}%
+${offset 125}${font Hack:size=10}${color1}${top_mem name 2}${alignr}${top_mem mem 2}%
+${offset 125}${font Hack:size=10}${color2}${top_mem name 3}${alignr}${top_mem mem 3}%
+${offset 125}${font Hack:size=10}${color3}${top_mem name 4}${alignr}${top_mem mem 4}%
+${offset 125}${font Hack:size=10}${color3}${top_mem name 4}${alignr}${top_mem mem 5}%
 
 ${voffset -10}
 ${offset 80}${font Hack:bold:size=10}${color4}  DISCOS
@@ -80,10 +79,9 @@ ${offset 140}${diskiograph 33,183 ffffff 0055ff}${voffset -35}
 
 ${voffset -10}
 ${offset 15}${font Hack:bold:size=10}${color1}
-Read:  ${font Hack:bold:size=10}${color1}${diskio_read /dev/sda}${alignr}Write: ${diskio_write /dev/sda}
-		  Tam     Usado Disp
-${exec df -h | grep 'sda3'}
+Read:  ${diskio_read /dev/sda}                   Write: ${diskio_write /dev/sda}
 ${exec df -h | grep 'sda4'}
+${exec df -h | grep 'sdb1'}
 
 ]]
 
