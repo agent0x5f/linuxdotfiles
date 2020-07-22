@@ -1,3 +1,11 @@
+!changues the slash for the backslash key
 keycode 51 = slash bar bar bar
+
+!add to up the "?" symbol
 keycode 111 = Up question question question
+
+!add to down the "\" symbol
 keycode 116 = Down backslash backslash backslash
+
+!cambiar las teclas para el motospeed ck62 
+!para el modo con las direccionales derechas activadas (fn + 3)
