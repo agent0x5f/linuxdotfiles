@@ -1,9 +1,21 @@
-
-!Move to Up-2 the "/" symbol
-keycode 111 = Up slash
-
-!Move to Down-2 the "?" symbol
-keycode 116 = Down question
-
-!cambiar las teclas para el motospeed ck62 
-!para el modo con las direccionales derechas activadas (fn + 3)
+keycode 111 = Up Up slash
+keycode 113 = Left Left slash
+keycode 114 = Right Right question
+keycode 116 = Down Down question
+keycode 62 = Mode_switch
+keycode 10 = 1 exclam F1
+keycode 11 = 2 at F2
+keycode 12 = 3 numbersign F3
+keycode 13 = 4 dollar F4
+keycode 14 = 5 percent F5
+keycode 15 = 6 asciicircum F6
+keycode 16 = 7 ampersand F7
+keycode 17 = 8 asterisk F8
+keycode 18 = 9 parenleft F9
+keycode 19 = 0 parenright F10
+keycode 20 = minus underscore F11
+keycode 21 = equal plus F12
+keycode 45 = k K Insert
+keycode 46 = l L Home
+keycode 59 = comma less Delete
+keycode 60 = period greater End
