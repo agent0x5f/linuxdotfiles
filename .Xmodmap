@@ -1,3 +1,5 @@
+!Format is: normal | shift | right-shift
+!For motospeed ck62, Fn+3 Mode
 keycode 111 = Up Up slash
 keycode 113 = Left Left slash
 keycode 114 = Right Right question
