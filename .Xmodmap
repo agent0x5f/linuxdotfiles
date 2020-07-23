@@ -1,5 +1,3 @@
-!Format is: normal | shift | right-shift
-!For motospeed ck62, Fn+3 Mode
 keycode 111 = Up Up slash
 keycode 113 = Left Left slash
 keycode 114 = Right Right question
@@ -21,3 +19,4 @@ keycode 45 = k K Insert
 keycode 46 = l L Home
 keycode 59 = comma less Delete
 keycode 60 = period greater End
+keycode 9 = Escape Escape asciitilde
