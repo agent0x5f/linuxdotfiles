@@ -1,7 +1,9 @@
 keycode 61 = Up Up slash
-keycode 108 = Left Left slash
-keycode 105 = Right Right question
-keycode 135 = Down Down question
+!bugfix on vcode and subl3 where question mark does not show dont know why but now it works!
+!drracket now control+down also works! with this fix yay :)
+keycode 108 = Left question question question Left Left slash
+keycode 105 = Right Right
+keycode 135 = Down Down
 keycode 62 = Mode_switch
 keycode 10 = 1 exclam F1
 keycode 11 = 2 at F2
