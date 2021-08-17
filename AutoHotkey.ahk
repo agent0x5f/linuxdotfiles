@@ -3,6 +3,20 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+RShift & a:: Send {U+00E1}
+RShift & e:: Send {U+00E9}
+RShift & i:: Send {U+00ED}
+RShift & o:: Send {U+00F3}
+RShift & u:: Send {U+00FA}
+
+RShift & A:: Send {U+00C1}
+RShift & E:: Send {U+00C9}
+RShift & I:: Send {U+00CD}
+RShift & O:: Send {U+00D3}
+RShift & U:: Send {U+00DA}
+
+RShift & n:: Send {U+00F1}
+
 RShift & ,:: Send {Del}
 RShift & .:: Send {End}
 RShift & k:: Send {Ins}
@@ -25,6 +39,7 @@ RShift & 9::Send {F9}
 RShift & 0::Send {F10}
 RShift & -::Send {F11}
 RShift & =::Send {F12}
+RShift & q::Send {@}
 
 RShift & Backspace::Delete
 
